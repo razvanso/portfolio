@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
@@ -12,7 +13,16 @@ body {
   /* Simulate the mobile view */
   max-width: 375px;
   max-height: 604px;
+
   /* end of simulated mobile view */
+}
+
+a {
+  outline: none;
+  border-radius: 8px;
+  display: block;
+  padding: 10px; /* some HitBox space */
+  transition: size 0.2s ease-in-out;
 }
 
 /* HEADER */
@@ -20,13 +30,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin: 0 24px 0 12px;
   height: 48px;
 }
+
 .logo {
   padding: 10px 12px;
 }
+
 .toolbar > a {
   font-size: 18px;
   font-weight: 700;
@@ -40,28 +51,32 @@ body {
   align-items: flex-start;
   padding: 114px 24px;
 }
+
 .shapes-bg {
   background: url(images/bg-shapes.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
-  left: -34px;/* accounts for the bg image positioning */
+  left: -34px; /* accounts for the bg image positioning */
 }
+
 h1 {
   color: #172b4d;
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
 }
+
 .headline-text {
   color: #344563;
   font-weight: 400;
   line-height: 24px;
   margin: 12px 0;
 }
+
 /* Social Media section */
 .supporting-text {
-  margin: 12px 0px;
+  margin: 12px 0;
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
@@ -71,29 +86,25 @@ h1 {
 .media-icons {
   /* Fix alignment of first icon while also allowing for a reasonable ?HitBox? */
   margin-left: -10px;
-
   display: flex;
   color: #505f79;
 }
 
 /* BUTTON STATES */
-/* Generic hover effect for all links */
-/* adapted from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
-a {
-  outline: none;
-  border-radius: 8px;
-  display: block;
-  padding: 10px;/* some HitBox space */
 
-  transition: size 0.2s ease-in-out;
-}
+/* Generic hover effect for all links
+  adapted from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/
+*/
+
 a:hover,
 a:focus {
   transform: scale(1.15);
 }
+
 a:focus {
-  border: 1px solid #7F8CFF;
+  border: 1px solid #7f8cff;
 }
+
 a:active {
   transform: scale(0.85);
 }

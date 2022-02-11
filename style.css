@@ -1,0 +1,35 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  /* Simulate the mobile view */
+  max-width: 375px;
+  max-height: 604px;
+  /* end of simulated mobile view */
+}
+
+/* HEADER */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 24px 0 12px;
+  height: 48px;
+}
+.logo {
+  padding: 10px 12px;
+}
+.toolbar > a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #6070ff;
+}
+

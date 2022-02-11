@@ -53,14 +53,14 @@ h1 {
   line-height: 52px;
   font-weight: 700;
 }
-.headline p {
+.headline-text {
   color: #344563;
   font-weight: 400;
   line-height: 24px;
   margin: 12px 0;
 }
 /* Social Media section */
-.social-media .supporting-text {
+.supporting-text {
   margin: 12px 0px;
   color: #7f8cff;
   font-weight: 500;

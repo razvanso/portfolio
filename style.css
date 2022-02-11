@@ -69,7 +69,31 @@ h1 {
 }
 
 .media-icons {
+  /* Fix alignment of first icon while also allowing for a reasonable ?HitBox? */
+  margin-left: -10px;
+
   display: flex;
-  gap: 20px;
   color: #505f79;
+}
+
+/* BUTTON STATES */
+/* Generic hover effect for all links */
+/* adapted from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
+a {
+  outline: none;
+  border-radius: 8px;
+  display: block;
+  padding: 10px;/* some HitBox space */
+
+  transition: size 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+  transform: scale(1.15);
+}
+a:focus {
+  border: 1px solid #7F8CFF;
+}
+a:active {
+  transform: scale(0.85);
 }

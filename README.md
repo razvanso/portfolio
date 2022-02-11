@@ -13,21 +13,6 @@
 
 [Live Demo Link](https://github.com/razvanso/portfolio) (just this README file for now)
 
-
-## Getting Started
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
 ## Authors
 
 👤 **Rio**
@@ -54,4 +39,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is **[MIT](./MIT.md)** licensed.
+This project is **[MIT](./LICENSE.md)** licensed.

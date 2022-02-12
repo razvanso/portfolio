@@ -148,7 +148,7 @@ a:active {
   display: grid;
   grid-template: auto / 1fr;
   background-color: #f7f7f9;
-  padding-top: 70px; /* 114px - 44px */
+  padding: 70px 0; /* 114px - 44px */
 }
 
 .card-works {

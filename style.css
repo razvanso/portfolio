@@ -145,6 +145,10 @@ a:active {
 /* WORKS Section
    =========================================== */
 
+.hidden {
+  display: none;
+}
+
 .works {
   display: grid;
   grid-template: auto / 1fr;
@@ -237,6 +241,10 @@ a:active {
 
 /* SKILLS LIST
 ============================================== */
+
+.all-skills {
+  margin-top: 10px;
+}
 
 .skill-list {
   display: flex;

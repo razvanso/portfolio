@@ -233,3 +233,76 @@ a:active {
   padding: 4px 12px;
   border-radius: 8px;
 }
+
+/* SKILLS LIST
+============================================== */
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inspired from DigitalOcean: https://www.digitalocean.com/community/tutorials/css-collapsible */
+.toggle-label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  padding: 24px 26px 24px 12px;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle-label::after {
+  content: "❯";
+}
+
+.toggle + .toggle-label {
+  border-bottom: 1px solid #e3e5e9;
+}
+
+.toggle:checked + .toggle-label {
+  border-bottom: none;
+}
+
+.toggle:checked + .toggle-label::after {
+  content: "﹀";
+}
+
+.collapsible-category {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out;
+}
+
+.collapsible-category > li {
+  margin: 6px 0;
+  padding: 9px 12px 9.72px 12px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  color: #253858;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle:checked + .toggle-label + .collapsible-category {
+  /* If contents are bigger than viewport, 100% should be used, but this ignores the animation */
+  max-height: 100vh;
+}
+
+.collapsible-category > li img {
+  margin-right: 16px;
+}
+
+.skill-list input[type="checkbox"] {
+  display: none;
+}

@@ -48,7 +48,6 @@ a {
 .headline {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 114px 24px;
 }
 
@@ -60,7 +59,8 @@ a {
   left: -34px; /* accounts for the bg image positioning */
 }
 
-h1 {
+h1,
+h2 {
   color: #172b4d;
   font-size: 40px;
   line-height: 52px;
@@ -108,4 +108,210 @@ a:focus {
 
 a:active {
   transform: scale(0.85);
+}
+
+.btn {
+  padding: 12px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 12px 0;
+  color: #396df2;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  align-self: start;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: #fff;
+  transform: scale(1); /* Resets default link behavior */
+}
+
+.btn:active {
+  background: #2230d2;
+}
+
+.btn:disabled {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
+}
+
+/* WORKS Section
+   =========================================== */
+
+.hidden {
+  display: none;
+}
+
+.works {
+  display: grid;
+  grid-template: auto / 1fr;
+  background-color: #f7f7f9;
+  padding: 70px 0; /* 114px - 44px */
+}
+
+.card-works {
+  margin: 44px 24px;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.card-image {
+  border-radius: 8px;
+  max-width: 295px;
+  max-height: 220px;
+}
+
+.card-details {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 12px 0;
+  color: #172b4d;
+}
+
+.project-highlights {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+/* Adapted from https://stackoverflow.com/questions/2351623/combining-css-pseudo-elements-after-the-last-child/2351651 plus some extra research on selectors */
+.project-highlights > div {
+  display: inline;
+}
+
+/* Circles as chars or codes: ●⚫○ | S \26ac | M \26ab | L \2B24 */
+.project-highlights > div:not(:last-child)::after {
+  content: "●";
+  color: #c1c7d0;
+  font-size: 20px;
+  margin: 0 12px;
+}
+
+/* I chose to use different classes for each highlight instead of ul+li because they are not semantically similar and have meanings */
+.project-client {
+  color: #344563;
+  text-transform: uppercase;
+}
+
+.project-role {
+  text-transform: capitalize;
+}
+
+.project-summary {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #344563;
+}
+
+.project-tags {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.project-tags li {
+  background-color: #ebebff;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+/* SKILLS LIST
+============================================== */
+
+.all-skills {
+  margin-top: 10px;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inspired from DigitalOcean: https://www.digitalocean.com/community/tutorials/css-collapsible */
+.toggle-label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  padding: 24px 26px 24px 12px;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle-label::after {
+  content: url(images/collapsed.svg);
+}
+
+.toggle + .toggle-label {
+  border-bottom: 1px solid #e3e5e9;
+}
+
+.toggle:checked + .toggle-label {
+  border-bottom: none;
+}
+
+.toggle:checked + .toggle-label::after {
+  content: url(images/expanded.svg);
+}
+
+.collapsible-category {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out;
+}
+
+.collapsible-category > li {
+  margin: 6px 0;
+  padding: 9px 12px 9.72px 12px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  color: #253858;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle:checked + .toggle-label + .collapsible-category {
+  /* If contents are bigger than viewport, 100% should be used, but this ignores the animation */
+  max-height: 100vh;
+}
+
+.collapsible-category > li img {
+  margin-right: 16px;
+}
+
+.skill-list input[type="checkbox"] {
+  display: none;
 }

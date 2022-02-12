@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Rio's portfolio - early draft",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "npx hint . && npx stylelint \"**/*.{css,scss}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razvanso/portfolio.git"
+  },
+  "keywords": [
+    "Rio"
+  ],
+  "author": "Rio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/razvanso/portfolio/issues"
+  },
+  "homepage": "https://github.com/razvanso/portfolio#readme",
+  "devDependencies": {
+    "hint": "^6.1.9",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}

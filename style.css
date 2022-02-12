@@ -257,7 +257,7 @@ a:active {
 }
 
 .toggle-label::after {
-  content: "❯";
+  content: url(images/collapsed.svg);
 }
 
 .toggle + .toggle-label {
@@ -269,7 +269,7 @@ a:active {
 }
 
 .toggle:checked + .toggle-label::after {
-  content: "﹀";
+  content: url(images/expanded.svg);
 }
 
 .collapsible-category {

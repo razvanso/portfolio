@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Rio's portfolio - early draft",
+  "main": "index.js",
+  "scripts": {
+    "test": "lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razvanso/portfolio.git"
+  },
+  "keywords": [
+    "Rio"
+  ],
+  "author": "Rio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/razvanso/portfolio/issues"
+  },
+  "homepage": "https://github.com/razvanso/portfolio#readme",
+  "devDependencies": {
+    "hint": "^6.1.9"
+  }
+}

@@ -57,11 +57,11 @@ a {
   background-size: contain;
   background-position: left;
   left: -34px; /* accounts for the bg image positioning */
+  border-bottom-left-radius: 90px;
 }
 
 .rounded-corner {
-  border-bottom-left-radius: 50px;
-  background-color: gray;
+  background-color: #f7f7f9;
 }
 
 h1,
@@ -251,6 +251,13 @@ a:active {
 
 .project-tags li:first-child {
   margin-left: 0;
+}
+
+/* ABOUT */
+
+.about {
+  background-color: white;
+  border-top-right-radius: 90px;
 }
 
 /* SKILLS LIST

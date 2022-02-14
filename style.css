@@ -59,6 +59,11 @@ a {
   left: -34px; /* accounts for the bg image positioning */
 }
 
+.rounded-corner {
+  border-bottom-left-radius: 50%;
+  background-color: #7f8cff;
+}
+
 h1,
 h2 {
   color: #172b4d;
@@ -226,7 +231,7 @@ a:active {
   list-style-type: none;
 }
 
-.project-tags li {  
+.project-tags li {
   background-color: #ebebff;
   color: #6070ff;
   font-weight: 500;
@@ -235,13 +240,13 @@ a:active {
   padding: 4px 12px;
   border-radius: 4px;
   float: left;
-  margin: 0 4px;  
+  margin: 0 4px;
 }
 
 .project-tags li:hover {
   cursor: pointer;
   background-color: #6070ff;
-  color: white;  
+  color: white;
 }
 
 .project-tags li:first-child {

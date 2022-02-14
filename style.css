@@ -226,16 +226,22 @@ a:active {
   list-style-type: none;
 }
 
-.project-tags li {
+.project-tags li {  
   background-color: #ebebff;
   color: #6070ff;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   padding: 4px 12px;
-  border-radius: 8px;
+  border-radius: 4px;
   float: left;
-  margin: 0 4px;
+  margin: 0 4px;  
+}
+
+.project-tags li:hover {
+  cursor: pointer;
+  background-color: #6070ff;
+  color: white;  
 }
 
 .project-tags li:first-child {

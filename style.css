@@ -47,15 +47,14 @@ a {
 .headline {
   display: flex;
   flex-direction: column;
-  padding: 114px 24px;
+  padding: 114px 24px 92px 24px;
   border-bottom-left-radius: 90px;
 }
 
 .shapes-bg {
   background: white url(images/bg-shapes.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
+  background-position-y: 12px;
 }
 
 .rounded-corner {

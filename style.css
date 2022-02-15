@@ -350,7 +350,6 @@ a:active {
 .shapes-bg-2 {
   background: #6070ff url(images/bg-shapes-2.svg);
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: 100% 21px;
 }
 
@@ -369,30 +368,50 @@ a:active {
   line-height: 28px;
   text-align: center;
   font-weight: 400;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 
 .contact > form {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  gap: 20px;
+  gap: 16px;
 }
 
 .contact > form > * {
   background-color: white;
   border-radius: 8px;
-  padding: 16px;
+  padding: 15px 16px;
   border: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 17px;
   line-height: 20px;
-  font-weight: 400;
   color: #172b4d;
+}
+
+/* https://css-tricks.com/almanac/selectors/p/placeholder/ */
+.contact textarea::placeholder {
+  color: #b3bac5;
+  font-size: 15px;
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact button {
+  margin-top: 22px;
+  min-width: 140px;
+  font-family: "Poppins", sans-serif;
+  color: #6070ff;
 }
 
 .contact input:focus,
 .contact textarea:focus,
-.contact button,
+.contact button:hover,
 .contact button:focus {
   outline: 2px solid white;
 }
@@ -405,5 +424,5 @@ a:active {
   height: 5px;
   border-radius: 10px;
   align-self: center;
-  margin-top: 32px;
+  margin-top: 20px;
 }

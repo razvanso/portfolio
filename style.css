@@ -11,8 +11,6 @@ html {
 
 body {
   /* Simulate the mobile view */
-  max-width: 375px;
-  max-height: 604px;
 
   /* end of simulated mobile view */
 }
@@ -52,11 +50,15 @@ a {
 }
 
 .shapes-bg {
-  background: url(images/bg-shapes.svg);
+  background: white url(images/bg-shapes.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left;
-  left: -34px; /* accounts for the bg image positioning */
+  background-size: cover;
+  background-position: top;
+  border-bottom-left-radius: 90px;
+}
+
+.rounded-corner {
+  background-color: #f7f7f9;
 }
 
 h1,
@@ -166,8 +168,8 @@ a:active {
 
 .card-image {
   border-radius: 8px;
-  max-width: 295px;
-  max-height: 220px;
+  width: 100%;
+  max-height: 100%;
 }
 
 .card-details {
@@ -224,9 +226,6 @@ a:active {
 
 .project-tags {
   list-style-type: none;
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
 }
 
 .project-tags li {
@@ -236,7 +235,39 @@ a:active {
   font-size: 12px;
   line-height: 16px;
   padding: 4px 12px;
+  border-radius: 4px;
+  float: left;
+  margin: 0 4px;
+}
+
+.collapsible-category > li {
+  margin: 6px 0;
+  padding: 9px 12px 9.72px 12px;
+  background: #f7f7f9;
   border-radius: 8px;
+  color: #253858;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.project-tags li:hover {
+  cursor: pointer;
+  background-color: #6070ff;
+  color: white;
+}
+
+.project-tags li:first-child {
+  margin-left: 0;
+}
+
+/* ABOUT */
+
+.about {
+  background-color: white;
+  border-top-right-radius: 90px;
 }
 
 /* SKILLS LIST
@@ -288,19 +319,6 @@ a:active {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.25s ease-in-out;
-}
-
-.collapsible-category > li {
-  margin: 6px 0;
-  padding: 9px 12px 9.72px 12px;
-  background: #f7f7f9;
-  border-radius: 8px;
-  color: #253858;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
 }
 
 .toggle:checked + .toggle-label + .collapsible-category {

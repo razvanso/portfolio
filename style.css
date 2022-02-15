@@ -149,7 +149,8 @@ a:active {
    =========================================== */
 
 .hidden {
-  display: none;
+  position: absolute;
+  visibility: hidden;
 }
 
 .works {

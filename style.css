@@ -11,6 +11,7 @@ html {
 
 body {
   /* Simulate the mobile view */
+  max-width: 375px;
 
   /* end of simulated mobile view */
 }
@@ -344,6 +345,13 @@ a:active {
   display: flex;
   flex-direction: column;
   padding: 103px 24px 8px 24px;
+}
+
+.shapes-bg-2 {
+  background: #6070ff url(images/bg-shapes-2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 21px;
 }
 
 .contact > h2 {

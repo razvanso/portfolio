@@ -398,7 +398,7 @@ a:active {
 }
 
 .contact::after {
-  content: ' ';
+  content: " ";
   display: block;
   background: #0d151e;
   width: 134px;

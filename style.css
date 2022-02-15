@@ -240,6 +240,19 @@ a:active {
   margin: 0 4px;
 }
 
+.collapsible-category > li {
+  margin: 6px 0;
+  padding: 9px 12px 9.72px 12px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  color: #253858;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
 .project-tags li:hover {
   cursor: pointer;
   background-color: #6070ff;
@@ -306,19 +319,6 @@ a:active {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.25s ease-in-out;
-}
-
-.collapsible-category > li {
-  margin: 6px 0;
-  padding: 9px 12px 9.72px 12px;
-  background: #f7f7f9;
-  border-radius: 8px;
-  color: #253858;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
 }
 
 .toggle:checked + .toggle-label + .collapsible-category {

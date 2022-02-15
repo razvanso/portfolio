@@ -45,7 +45,7 @@
         </ul>
       </div>
     </section>
-    <section class="works" STYLE="DISPLAY: NONE">
+    <section class="works">
       <h2 class="hidden">Works</h2>
       <article class="card-works">
         <img class="card-image" src="images/works/project_01.main_snapshot.jpg" alt="Main snapshot of project 1">
@@ -136,7 +136,7 @@
         </div>
       </article>
     </section>
-    <section class="rounded-corner" id="about" STYLE="DISPLAY: NONE">
+    <section class="rounded-corner" id="about">
       <div class="about headline">
         <h2> About <br> Myself </h2>
         <p class="headline-text">
@@ -184,21 +184,18 @@
         </ul>
       </div>
     </section>
-    
-    <footer class="contact rounded-corner shapes-bg">
-      <div>
-        <h2 id="contact">Contact me</h2>
-        <p>
-          If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
-        </p>
-        <form action="#">
-          <input type="text" name="name" id="name" placeholder="Enter you name" area-label="User name">
-          <input type="email" name="email" id="email" placeholder="your.email@domain.com">
-          <textarea name="message" id="message" maxlength="500" placeholder="Write your message here"></textarea>
-          <button type="submit">Get In Touch</button>
-        </form>
-      </div>
-    </footer>
+<footer class="contact rounded-corner shapes-bg">
+  <h2 id="contact">Contact me</h2>
+  <p>
+    If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
+  </p>
+  <form action="https://formspree.io/f/xgedkalg" method="POST">
+    <input type="text" name="name" id="name" placeholder="Enter you name" aria-label="User name">
+    <input type="email" name="email" id="email" placeholder="your.email@domain.com">
+    <textarea name="message" id="message" maxlength="500" placeholder="Write your message here"></textarea>
+    <button class="btn" type="submit">Get In Touch</button>
+    </form>
+</footer>
 
   </main>
 </body>

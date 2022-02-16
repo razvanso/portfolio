@@ -9,12 +9,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  /* Simulate the mobile view */
-
-  /* end of simulated mobile view */
-}
-
 a {
   outline: none;
   border-radius: 8px;
@@ -46,15 +40,15 @@ a {
 .headline {
   display: flex;
   flex-direction: column;
-  padding: 114px 24px;
+  padding: 114px 24px 92px 24px;
+  border-bottom-left-radius: 90px;
 }
 
 .shapes-bg {
   background: white url(images/bg-shapes.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  border-bottom-left-radius: 90px;
+  background-position-y: 12px;
 }
 
 .rounded-corner {
@@ -148,7 +142,8 @@ a:active {
    =========================================== */
 
 .hidden {
-  display: none;
+  position: absolute;
+  visibility: hidden;
 }
 
 .works {
@@ -268,6 +263,7 @@ a:active {
 .about {
   background-color: white;
   border-top-right-radius: 90px;
+  border-bottom-left-radius: 0;
 }
 
 /* SKILLS LIST
@@ -332,4 +328,95 @@ a:active {
 
 .skill-list input[type="checkbox"] {
   display: none;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  background-color: #6070ff;
+  border-top-left-radius: 90px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 103px 24px 8px 24px;
+}
+
+.shapes-bg-2 {
+  background: #6070ff url(images/bg-shapes-2.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 21px;
+}
+
+.contact > h2 {
+  color: white;
+  align-self: center;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 12px;
+}
+
+.contact > p {
+  color: #ebebff;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.contact > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  gap: 16px;
+}
+
+.contact > form > * {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px 16px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+}
+
+/* https://css-tricks.com/almanac/selectors/p/placeholder/ */
+.contact textarea::placeholder {
+  color: #b3bac5;
+  font-size: 15px;
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact button {
+  margin-top: 22px;
+  min-width: 140px;
+  font-family: "Poppins", sans-serif;
+  color: #6070ff;
+}
+
+.contact input:focus,
+.contact textarea:focus,
+.contact button:hover,
+.contact button:focus {
+  outline: 2px solid white;
+}
+
+.contact::after {
+  content: " ";
+  display: block;
+  background: #0d151e;
+  width: 134px;
+  height: 5px;
+  border-radius: 10px;
+  align-self: center;
+  margin-top: 20px;
 }

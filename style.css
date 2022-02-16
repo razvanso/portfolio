@@ -9,13 +9,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  /* Simulate the mobile view */
-  max-width: 375px;
-
-  /* end of simulated mobile view */
-}
-
 a {
   outline: none;
   border-radius: 8px;

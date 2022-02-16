@@ -194,9 +194,9 @@
         If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
       </p>
       <form id="contact-form" action="https://formspree.io/f/xgedkalg" method="POST">
-        <input type="text" name="name" id="name" placeholder="Enter you name" aria-label="User name" value="Yeremias">
-        <input type="email" name="email" id="email" placeholder="your.email@domain.com" value="natajayanj14@gmail.com">
-        <textarea name="message" id="message" maxlength="500" placeholder="Write your message here"></textarea>
+        <input type="text" name="name" id="name" maxlength="30" placeholder="Enter you name" aria-label="User name" required>
+        <input type="email" name="email" id="email" placeholder="your.email@domain.com" aria-label="Email address" required>
+        <textarea name="message" id="message" maxlength="500" placeholder="Write your message here" required></textarea>
       </form>
       <button class="btn" form="contact-form" type="submit">Get In Touch</button>
     </footer>

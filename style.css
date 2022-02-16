@@ -47,6 +47,7 @@ a {
 .shapes-bg {
   background: white url(images/bg-shapes.svg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position-y: 12px;
 }
 

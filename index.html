@@ -56,7 +56,12 @@
     <section class="portfolio">
       <h2 class="hidden" id="portfolio">Portfolio</h2>
       <article class="card-works">
-        <img class="card-image" src="images/works/project_01.main_snapshot.jpg" alt="Main snapshot of project 1">
+        <!-- Responsive images: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/works/project_01.main_snapshot_295w.jpg">
+          <source media="(min-width: 400px)" srcset="images/works/project_01.main_snapshot_544w.jpg">
+          <img class="card-image" src="images/works/project_01.main_snapshot_544w.jpg" alt="Main snapshot of project 1">
+        </picture>
         <div class="card-details">
           <header>
             <h3 class="project-title">Tonic</h3>
@@ -78,7 +83,11 @@
         </div>
       </article>
       <article class="card-works">
-        <img class="card-image" src="images/works/project_02.main_snapshot.jpg" alt="Main snapshot of project 2">
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/works/project_02.main_snapshot_295w.jpg">
+          <source media="(min-width: 400px)" srcset="images/works/project_02.main_snapshot_544w.jpg">
+          <img class="card-image" src="images/works/project_02.main_snapshot_544w.jpg" alt="Main snapshot of project 1">
+        </picture>
         <div class="card-details">
           <header>
             <h3 class="project-title">Multi-Post <br>Stories</h3>
@@ -100,7 +109,11 @@
         </div>
       </article>
       <article class="card-works">
-        <img class="card-image" src="images/works/project_03.main_snapshot.jpg" alt="Main snapshot of project 3">
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/works/project_03.main_snapshot_295w.jpg">
+          <source media="(min-width: 400px)" srcset="images/works/project_03.main_snapshot_544w.jpg">
+          <img class="card-image" src="images/works/project_03.main_snapshot_544w.jpg" alt="Main snapshot of project 1">
+        </picture>
         <div class="card-details">
           <header>
             <h3 class="project-title">Tonic</h3>
@@ -122,7 +135,11 @@
         </div>
       </article>
       <article class="card-works">
-        <img class="card-image" src="images/works/project_04.main_snapshot.jpg" alt="Main snapshot of project 4">
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/works/project_04.main_snapshot_295w.jpg">
+          <source media="(min-width: 400px)" srcset="images/works/project_04.main_snapshot_544w.jpg">
+          <img class="card-image" src="images/works/project_04.main_snapshot_544w.jpg" alt="Main snapshot of project 1">
+        </picture>
         <div class="card-details">
           <header>
             <h3 class="project-title">Multi-Post<br>Stories</h3>

@@ -124,6 +124,7 @@ a:active {
   line-height: 24px;
   letter-spacing: 0.03em;
   align-self: start;
+  transition: all 0.5s ease-in-out;
 }
 
 .btn:hover,

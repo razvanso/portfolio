@@ -22,7 +22,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 24px 0 12px;
+  padding: 0 24px 0 12px;
   height: 48px;
 }
 
@@ -34,6 +34,53 @@ a {
   font-size: 18px;
   font-weight: 700;
   color: #6070ff;
+}
+
+/* MENU */
+nav > input[type="checkbox"] {
+  display: none;
+}
+
+/* LARGER SCREENS */
+@media screen and (min-width: 600px) {
+  #hamburger {
+    display: none;
+  }
+
+  ul#menu {
+    display: flex;
+    gap: 8px;
+  }
+
+  #menu a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #344563;
+    padding: 10px 12px;
+  }
+
+  #menu:active {
+    font-weight: 700;
+    color: #6070ff;
+  }
+
+  .toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+
+    /* todo: remove drop-shadow before scrolling */
+    filter: drop-shadow(0 0 16px rgba(64, 83, 252, 0.24));
+  }
+}
+
+/* SMALL SCREENS */
+@media screen and (max-width: 600px) {
+  ul#menu > li {
+    display: none;
+  }
 }
 
 /* MAIN PAGE */
@@ -79,7 +126,8 @@ h2 {
   line-height: 24px;
 }
 
-.media-icons {
+.media-icons,
+#menu {
   /* Fix alignment of first icon while also allowing for a reasonable ?HitBox? */
   margin-left: -10px;
   display: flex;

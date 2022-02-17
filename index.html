@@ -17,9 +17,15 @@
 
 <body>
   <header class="toolbar">
-    <a class="logo" href="#contact">Rio's Logo</a>
+    <a class="logo" href="/">Rio's Logo</a>
     <nav>
-      <a href="#"><img src="images/Hamburger-Menu.svg" alt="Menu"></a>
+      <input type="checkbox" />
+      <img id="hamburger" src="images/Hamburger-Menu.svg" alt="Menu">
+      <ul id="menu">
+        <li><a href="#portfolio"> Portfolio</a></li>
+        <li><a href="#about"> About </a></li>
+        <li><a href="#contact"> Contact </a></li>
+      </ul>
     </nav>
   </header>
 
@@ -48,7 +54,7 @@
     </section>
 
     <section class="works">
-      <h2 class="hidden" id="works">Works</h2>
+      <h2 class="hidden" id="portfolio">Works</h2>
       <article class="card-works">
         <img class="card-image" src="images/works/project_01.main_snapshot.jpg" alt="Main snapshot of project 1">
         <div class="card-details">

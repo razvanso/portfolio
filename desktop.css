@@ -8,10 +8,12 @@ ul#menu {
 }
 
 #menu a {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   color: #344563;
   padding: 10px 12px;
+  line-height: 20px;
+  text-align: center;
 }
 
 #menu:active {
@@ -25,7 +27,33 @@ ul#menu {
   left: 0;
   right: 0;
   background-color: #fff;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1rem;
 
   /* todo: remove drop-shadow before scrolling */
   filter: drop-shadow(0 0 16px rgba(64, 83, 252, 0.24));
+}
+
+.hero {
+  padding: 20% 18%;
+}
+
+.hero h1 {
+  padding-top: 72px;
+  font-size: 3rem;
+  line-height: 3.75rem;
+  letter-spacing: 0.37px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.shapes-bg {
+  background: white url(images/hero-bg-shapes-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 97.04% 85.28%;
+  background-position: 35px;
 }

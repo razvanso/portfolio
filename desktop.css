@@ -62,22 +62,28 @@ ul#menu {
 
 /* PORTFOLIO */
 .portfolio {
-  gap: 142px;
-  max-width: 1156px;
+  gap: 54px; /* 142-2x44 the margin of card-works boxes */
+  justify-items: center;
 }
 
 .card-works {
+  max-width: 1156px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: "image details";
   flex: 1 1 0;
   gap: 22px;
-  margin: 0;
 }
 
 .card-works:nth-child(odd) {
-  flex-direction: row-reverse;
+  grid-template-areas: "details image";
 }
 
 .card-details {
   padding: 24px;
+  grid-area: details;
+}
+
+.card-image {
+  grid-area: image;
 }

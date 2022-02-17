@@ -67,7 +67,7 @@ ul#menu {
 }
 
 .card-works {
-  max-width: 1156px;
+  max-width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "image details";
@@ -148,3 +148,4 @@ ul#menu {
   background-size: 97.04% 85.28%;
   background-position: 35px;
 }
+

@@ -87,3 +87,40 @@ ul#menu {
 .card-image {
   grid-area: image;
 }
+
+/* ABOUT */
+.about {
+  padding: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+.about .headline {
+  flex: 2 1 40.5%;
+  padding: 24px;
+}
+
+.about .all-skills {
+  flex: 3 1 59.5%;
+  padding: 0;
+  margin: 0;
+}
+
+.collapsible-category {
+  flex-direction: row;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.collapsible-category li {
+  display: flex;
+  align-items: flex-start;
+  padding: 12px 12px 12px 20px;
+  border-radius: 8px;
+  margin: 0;
+  flex-direction: column;
+  flex: 0 0 18%;
+  gap: 20px;
+}
+
+/* CONTACT */

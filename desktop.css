@@ -27,9 +27,7 @@ ul#menu {
   left: 0;
   right: 0;
   background-color: #fff;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 1rem;
+  padding: 1rem 10%;
 
   /* todo: remove drop-shadow before scrolling */
   filter: drop-shadow(0 0 16px rgba(64, 83, 252, 0.24));

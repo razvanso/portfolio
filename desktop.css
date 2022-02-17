@@ -35,6 +35,8 @@ ul#menu {
   filter: drop-shadow(0 0 16px rgba(64, 83, 252, 0.24));
 }
 
+/* HERO */
+
 .hero {
   padding: 20% 18%;
 }
@@ -56,4 +58,26 @@ ul#menu {
   background-repeat: no-repeat;
   background-size: 97.04% 85.28%;
   background-position: 35px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  gap: 142px;
+  max-width: 1156px;
+}
+
+.card-works {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex: 1 1 0;
+  gap: 22px;
+  margin: 0;
+}
+
+.card-works:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.card-details {
+  padding: 24px;
 }

@@ -124,3 +124,27 @@ ul#menu {
 }
 
 /* CONTACT */
+.contact {
+  padding: 10% 30% 9%;
+}
+
+.contact form {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact button {
+  align-self: center;
+}
+
+.contact::after {
+  display: none;
+  height: 0;
+}
+
+.shapes-bg-2 {
+  background: #6070ff url(images/contact-form-background-shapes.svg);
+  background-repeat: no-repeat;
+  background-size: 97.04% 85.28%;
+  background-position: 35px;
+}

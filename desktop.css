@@ -60,7 +60,7 @@ ul#menu {
   background-position: 35px;
 }
 
-/* PORTFOLIO */
+/* #region PORTFOLIO */
 .portfolio {
   gap: 54px; /* 142-2x44 the margin of card-works boxes */
   justify-items: center;
@@ -73,6 +73,11 @@ ul#menu {
   grid-template-areas: "image details";
   flex: 1 1 0;
   gap: 22px;
+}
+
+.card-works:hover {
+  border: 1px solid #396df2;
+  filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
 }
 
 .card-works:nth-child(odd) {
@@ -88,7 +93,9 @@ ul#menu {
   grid-area: image;
 }
 
-/* ABOUT */
+/* #endregion PORTFOLIO */
+
+/* #region ABOUT */
 .about {
   padding: 10%;
   display: flex;
@@ -123,7 +130,9 @@ ul#menu {
   gap: 20px;
 }
 
-/* CONTACT */
+/* #endregion ABOUT */
+
+/* #region CONTACT */
 .contact {
   padding: 10% 30% 9%;
 }
@@ -148,3 +157,5 @@ ul#menu {
   background-size: 89.63% 85.28%;
   background-position: 30px 70px;
 }
+
+/* #endregion CONTACT */

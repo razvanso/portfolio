@@ -1,3 +1,20 @@
 ul#menu > li {
   display: none;
 }
+
+.hero-bg-shapes {
+  background: white url(images/hero-bg-shapes-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 12px;
+}
+
+.contact-bg-shapes {
+  background: #6070ff url(images/contact-form-background-shapes-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about .headline {
+  padding-bottom: 0;
+}

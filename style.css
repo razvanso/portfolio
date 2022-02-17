@@ -29,6 +29,10 @@ main {
   background-color: #f7f7f9;
 }
 
+section {
+  padding: 114px 24px;
+}
+
 /* HEADER */
 .toolbar {
   display: flex;
@@ -57,15 +61,8 @@ main {
 .headline {
   display: flex;
   flex-direction: column;
-  padding: 114px 24px 92px 24px;
+  padding-bottom: 92px;
   border-bottom-left-radius: 90px;
-}
-
-.shapes-bg {
-  background: white url(images/bg-shapes.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: 12px;
 }
 
 .headline-text {
@@ -345,12 +342,6 @@ a:active {
   display: flex;
   flex-direction: column;
   padding: 103px 24px 8px 24px;
-}
-
-.shapes-bg-2 {
-  background: #6070ff url(images/bg-shapes-2.svg);
-  background-repeat: no-repeat;
-  background-position: 100% 21px;
 }
 
 .contact > h2 {

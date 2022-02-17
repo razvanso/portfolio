@@ -53,7 +53,7 @@ ul#menu {
   line-height: 28px;
 }
 
-.shapes-bg {
+.hero-bg-shapes {
   background: white url(images/hero-bg-shapes-desktop.svg);
   background-repeat: no-repeat;
   background-size: 97.04% 85.28%;
@@ -142,10 +142,9 @@ ul#menu {
   height: 0;
 }
 
-.shapes-bg-2 {
-  background: #6070ff url(images/contact-form-background-shapes.svg);
+.contact-bg-shapes {
+  background: #6070ff url(images/contact-form-background-shapes-desktop.svg);
   background-repeat: no-repeat;
-  background-size: 97.04% 85.28%;
-  background-position: 35px;
+  background-size: 89.63% 85.28%;
+  background-position: 30px 70px;
 }
-

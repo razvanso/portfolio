@@ -11,15 +11,17 @@
 
 ## Live Demo (if available)
 
+![Portfolio website screensot](screenshot.png)
+
 [Live Demo Link](https://github.com/razvanso/portfolio) (just this README file for now)
 
 ## Authors
 
 👤 **Rio**
 
-- GitHub: [@githubhandle](https://github.com/razvanso)
-- Twitter: [@twitterhandle](https://twitter.com/RioRazvan)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/razvan-rio/)
+- GitHub: [@razvanso](https://github.com/razvanso)
+- Twitter: [@RioRazvan](https://twitter.com/RioRazvan)
+- LinkedIn: [Razvan Rio](https://www.linkedin.com/in/razvan-rio/)
 
 ## 🤝 Contributing
 

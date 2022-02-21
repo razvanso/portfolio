@@ -164,6 +164,11 @@ a:active {
   border-radius: 16px;
 }
 
+.card-works:hover {
+  border: 1px solid #396df2;
+  filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
+}
+
 .card-image {
   border-radius: 8px;
   width: 100%;

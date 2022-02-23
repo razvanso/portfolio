@@ -2,7 +2,6 @@
 
 > My greatest portfolio starts early, and will evolve as I become better at my craft.
 
-
 ## Built With
 
 - Major languages: HTML & CSS
@@ -11,9 +10,9 @@
 
 ## Live Demo (if available)
 
-![Portfolio website screensot](screenshot.png)
+[Live Demo Link](https://razvanso.github.io/portfolio)
 
-[Live Demo Link](https://github.com/razvanso/portfolio) (just this README file for now)
+![Portfolio website screenshot](screenshot.png)
 
 ## Authors
 
@@ -37,7 +36,7 @@ Give a ⭐️ if you like this project!
 
 - README template from [Microverse](https://github.com/microverseinc/readme-template)
 - Linter setup from [Microverse](https://github.com/microverseinc/linters-config/tree/master/html-css)
-- Based on this [beautiful design](https://www.figma.com/file/mkC0dUJBz0JnpcI4uZT3QX/Microverse-Student-Project-1-(Copy)?node-id=0%3A1) provided by Microverse.
+- Based on this [beautiful design](<https://www.figma.com/file/mkC0dUJBz0JnpcI4uZT3QX/Microverse-Student-Project-1-(Copy)?node-id=0%3A1>) provided by Microverse.
 
 ## 📝 License
 

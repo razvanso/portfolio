@@ -73,11 +73,6 @@ ul#menu {
   gap: 22px;
 }
 
-.card-works:hover {
-  border: 1px solid #396df2;
-  filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
-}
-
 .card-works:nth-child(odd) {
   grid-template-areas: "details image";
 }

@@ -1,6 +1,6 @@
-ul#menu > li {
+/* ul#menu > li {
   display: none;
-}
+} */
 
 .hero-bg-shapes {
   background: white url(images/hero-bg-shapes-mobile.svg) 0 center no-repeat;
@@ -8,7 +8,8 @@ ul#menu > li {
 }
 
 .contact-bg-shapes {
-  background: #6070ff url(images/contact-form-background-shapes-mobile.svg) right 20% no-repeat;
+  background: #6070ff url(images/contact-form-background-shapes-mobile.svg)
+    right 20% no-repeat;
   background-size: 59.2% 92%;
 }
 
@@ -23,8 +24,9 @@ ul#menu > li {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #6070ff;
-  mix-blend-mode: multiply;
+  background-color: #6070ffb4;
+  filter: blur(8px);
+  /*   mix-blend-mode: multiply; */
   width: 100vw;
   height: 100vh;
 }
@@ -37,5 +39,5 @@ ul#menu > li {
 }
 
 ul#menu > li a {
-  display: inline;
+  display: block;
 }

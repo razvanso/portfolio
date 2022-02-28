@@ -15,3 +15,27 @@ ul#menu > li {
 .about .headline {
   padding-bottom: 0;
 }
+
+.visible-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 106px 28px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  width: 100vw;
+  height: 100vh;
+}
+
+#menu a {
+  color: #fff;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+}
+
+ul#menu > li a {
+  display: inline;
+}

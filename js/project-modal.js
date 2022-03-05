@@ -28,8 +28,7 @@ const projects = [
   {
     id: 2,
     title: 'Multi-Post <br />Stories',
-    summary:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    summary: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     pictures: {
       sources: [
         {
@@ -108,37 +107,41 @@ const projects = [
   },
 ];
 
-const projectsContainer = document.getElementById('portfolio').parentElement;// the portfolio heading's parent
+const projectTemplate = (project) => {
+  const pictureSources = project.pictures.sources.map((pictureSource) => `<source media="${pictureSource.media}" srcset="${pictureSource.srcset}" />`).join('');
 
-projects.forEach((element) => {
-  const pictureSources = element.pictures.sources.map((pictureSource) => `<source media="${pictureSource.media}" srcset="${pictureSource.srcset}" />`).join('');
+  const highlights = project.highlights.map((highlight) => `<div class="project-client">${highlight}</div>`).join('');
 
-  const highlights = element.highlights.map((highlight) => `<div class="project-client">${highlight}</div>`).join('');
+  const tags = project.tags.map((tag) => `<li>${tag}</li>`).join('');
 
-  const tags = element.tags.map((tag) => `<li>${tag}</li>`).join('');
-
-  // add the project
-  projectsContainer.innerHTML += `
+  return `
     <article class="card-works">
       <!-- Responsive images: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
       <picture>
         ${pictureSources}
         <img
-          class="${element.pictures.image.class}"
-          src="${element.pictures.image.source}"
-          alt="${element.pictures.image.alt}"
+          class="${project.pictures.image.class}"
+          src="${project.pictures.image.source}"
+          alt="${project.pictures.image.alt}"
         />
       </picture>
       <div class="card-details">
         <header>
-          <h3 class="project-title">${element.title}</h3>
+          <h3 class="project-title">${project.title}</h3>
           <div class="project-highlights">${highlights}</div>
         </header>
-        <p class="project-summary">${element.summary}</p>
+        <p class="project-summary">${project.summary}</p>
         <ul class="project-tags">${tags}</ul>
         <a href="#" class="btn">See Project</a>
       </div>
     </article>
 
   `;
+};
+
+const projectsContainer = document.getElementById('portfolio').parentElement;// the portfolio heading's parent
+
+projects.forEach((project) => {
+  // add the project
+  projectsContainer.innerHTML += projectTemplate(project);
 });

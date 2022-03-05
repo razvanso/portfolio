@@ -57,4 +57,5 @@ ul#menu li a {
 
 ul#menu > li a {
   display: block;
+  transform: none;
 }

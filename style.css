@@ -50,6 +50,7 @@ section {
   font-size: 18px;
   font-weight: 700;
   color: #6070ff;
+  flex-shrink: 0;
 }
 
 /* MENU */
@@ -109,6 +110,20 @@ a:active {
   transform: scale(0.85);
 }
 
+button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: block;
+}
+
+.wrapper.hide {
+  display: none;
+}
+
 .btn {
   padding: 12px;
   border: 1px solid #6070ff;
@@ -156,7 +171,7 @@ a:active {
   padding: 70px 0; /* 114px - 44px */
 }
 
-.card-works {
+.popup-card-works, .card-works {
   margin: 44px 24px;
   padding: 16px;
   background-color: #fff;
@@ -421,4 +436,22 @@ a:active {
   border-radius: 10px;
   align-self: center;
   margin-top: 20px;
+}
+
+/* Project modal styling */
+
+#project-modal {
+  background: #6070ffb4;
+  background: #6070ffb4;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  max-height: 100%;
+  overflow-y: scroll;
+  z-index: 1001;
+}
+
+.modal-title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
 }

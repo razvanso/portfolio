@@ -107,18 +107,17 @@ const projects = [
   },
 ];
 
-const projectTemplate = (project) => {
-  const pictureSources = project.pictures.sources.map((pictureSource) => `<source media="${pictureSource.media}" srcset="${pictureSource.srcset}" />`).join('');
+const buildPictureSources = (project) => project.pictures.sources.map((pictureSource) => `<source media="${pictureSource.media}" srcset="${pictureSource.srcset}" />`).join('');
 
-  const highlights = project.highlights.map((highlight) => `<div class="project-client">${highlight}</div>`).join('');
+const buildHighlights = (project) => project.highlights?.map((highlight) => `<div class="project-client">${highlight}</div>`).join('');
 
-  const tags = project.tags.map((tag) => `<li>${tag}</li>`).join('');
+const buildProjectTags = (project) => project.tags.map((tag) => `<li>${tag}</li>`).join('');
 
-  return `
+const projectTemplate = (project) => `
     <article class="card-works">
       <!-- Responsive images: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
       <picture>
-        ${pictureSources}
+        ${buildPictureSources(project)}
         <img
           class="${project.pictures.image.class}"
           src="${project.pictures.image.source}"
@@ -127,17 +126,19 @@ const projectTemplate = (project) => {
       </picture>
       <div class="card-details">
         <header>
-          <h3 class="project-title">${project.title}</h3>
-          <div class="project-highlights">${highlights}</div>
+          <div class="modal-title-container">
+            <h3 class="project-title">${project.title}</h3>
+            <button class="close-modal" onclick="hidePopup()" >&#x292B;</button>
+          </div>
+          <div class="project-highlights">${buildHighlights(project.id)}</div>
         </header>
         <p class="project-summary">${project.summary}</p>
-        <ul class="project-tags">${tags}</ul>
-        <a href="#" class="btn">See Project</a>
+        <ul class="project-tags">${buildProjectTags(project)}</ul>
+        <button class="btn" onclick="showPopup(${project.id})" >See Project</button>
       </div>
     </article>
 
   `;
-};
 
 const projectsContainer = document.getElementById('portfolio').parentElement;// the portfolio heading's parent
 
@@ -145,3 +146,46 @@ projects.forEach((project) => {
   // add the project
   projectsContainer.innerHTML += projectTemplate(project);
 });
+
+/* PROJECT MODAL POPUP */
+const projectModal = document.getElementById('project-modal');
+
+const popupTemplate = (project) => `
+    <article class="popup-card-works">
+      <header>
+        <div class="modal-title-container">
+          <h3 class="project-title">${project.title}</h3>
+          <button class="close-modal" onclick="hidePopup()" >&#x292B;</button>
+        </div>
+        <div class="project-highlights">${buildHighlights(project)}</div>
+      </header><br>
+
+      <!-- Responsive images: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
+      <picture>
+        ${buildPictureSources(project.pictures.sources)}
+        <img
+          class="card-image"
+          src="${project.pictures.image.source}"
+          alt="${project.pictures.image.alt}"
+        />
+      </picture>
+      <div class="card-details">
+        <p class="project-summary">${project.description}</p>
+        <ul class="project-tags">${buildProjectTags(project)}</ul>
+      </div>
+    </article>
+  `;
+
+/* eslint-disable no-unused-vars */
+/* These functions are being used in the HTML code of the projectTemplate */
+
+function showPopup(projectId) {
+  projectModal.innerHTML = popupTemplate(projects[projectId - 1]);
+  // window.scrollTo(0, 0);
+}
+
+function hidePopup() {
+  projectModal.innerHTML = '';
+}
+
+/* eslint-disable no-unused-vars */

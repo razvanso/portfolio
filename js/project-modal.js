@@ -162,7 +162,7 @@ const popupTemplate = (project) => `
 
       <!-- Responsive images: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
       <picture>
-        ${buildPictureSources(project.pictures.sources)}
+        ${buildPictureSources(project)}
         <img
           class="card-image"
           src="${project.pictures.image.source}"
@@ -170,9 +170,10 @@ const popupTemplate = (project) => `
         />
       </picture>
       <div class="card-details">
-        <p class="project-summary">${project.description}</p>
+        <p class="project-summary">${project.summary}</p>
         <ul class="project-tags">${buildProjectTags(project)}</ul>
       </div>
+
     </article>
   `;
 
@@ -181,7 +182,7 @@ const popupTemplate = (project) => `
 
 function showPopup(projectId) {
   projectModal.innerHTML = popupTemplate(projects[projectId - 1]);
-  // window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
 }
 
 function hidePopup() {

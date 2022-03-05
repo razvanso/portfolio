@@ -109,7 +109,7 @@ const projects = [
 
 const buildPictureSources = (project) => project.pictures.sources.map((pictureSource) => `<source media="${pictureSource.media}" srcset="${pictureSource.srcset}" />`).join('');
 
-const buildHighlights = (project) => project.highlights?.map((highlight) => `<div class="project-client">${highlight}</div>`).join('');
+const buildHighlights = (project) => project.highlights.map((highlight) => `<div class="project-client">${highlight}</div>`).join('');
 
 const buildProjectTags = (project) => project.tags.map((tag) => `<li>${tag}</li>`).join('');
 

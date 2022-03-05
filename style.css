@@ -171,7 +171,8 @@ button {
   padding: 70px 0; /* 114px - 44px */
 }
 
-.popup-card-works, .card-works {
+.popup-card-works,
+.card-works {
   margin: 44px 24px;
   padding: 16px;
   background-color: #fff;
@@ -441,7 +442,6 @@ button {
 /* Project modal styling */
 
 #project-modal {
-  background: #6070ffb4;
   background: #6070ffb4;
   backdrop-filter: blur(5px);
   position: absolute;

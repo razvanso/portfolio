@@ -455,3 +455,40 @@ button {
   justify-content: space-between;
   margin-top: 0;
 }
+
+.email-error {
+  border: 1px solid red;
+}
+
+.email-error:focus-within {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  flex-grow: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+fieldset {
+  width : 100%;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+  background-color: red;
+  color: white;
+}
+input:invalid::placeholder {
+  color: white;
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}

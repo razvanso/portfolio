@@ -9,7 +9,6 @@ button.addEventListener('click', event => {
 
 menuItems.forEach(item => {
   item.addEventListener('click', event => {
-    console.log('hide');
     button.classList.remove('active');
     menu.classList.remove('active');
   });

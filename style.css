@@ -50,6 +50,7 @@ section {
   font-size: 18px;
   font-weight: 700;
   color: #6070ff;
+  flex-shrink: 0;
 }
 
 /* MENU */
@@ -109,6 +110,20 @@ a:active {
   transform: scale(0.85);
 }
 
+button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: block;
+}
+
+.wrapper.hide {
+  display: none;
+}
+
 .btn {
   padding: 12px;
   border: 1px solid #6070ff;
@@ -156,6 +171,7 @@ a:active {
   padding: 70px 0; /* 114px - 44px */
 }
 
+.popup-card-works,
 .card-works {
   margin: 44px 24px;
   padding: 16px;
@@ -405,6 +421,20 @@ a:active {
   color: #6070ff;
 }
 
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+  background-color: red;
+  color: white;
+}
+
+input:visited:invalid::placeholder {
+  color: white;
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}
+
 .contact input:focus,
 .contact textarea:focus,
 .contact button:hover,
@@ -421,4 +451,35 @@ a:active {
   border-radius: 10px;
   align-self: center;
   margin-top: 20px;
+}
+
+/* Project modal styling */
+
+#project-modal {
+  background: #6070ffb4;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  max-height: 100%;
+  overflow-y: scroll;
+  z-index: 1001;
+}
+
+.modal-title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.email-error {
+  border: 1px solid red;
+}
+
+.email-error:focus-within {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  flex-grow: 1;
 }

@@ -13,11 +13,11 @@
 }
 
 /* Menu */
-.menu {
+#menu {
   display: none;
 }
 
-.menu.active {
+#menu.active {
   display: flex;
   flex-direction: column;
   padding: 106px 28px;
@@ -34,10 +34,8 @@
   width: 12px;
   height: 12px;
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 20px;
-  margin-left: 330px;
+  top: 20px;
+  right: 20px;
   background-image: url("images/Hamburger-Menu.svg");
   background-repeat: no-repeat;
   background-size: contain;

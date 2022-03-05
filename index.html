@@ -63,113 +63,8 @@
     </section>
 
     <section class="portfolio">
+      <div id="project-modal"></div>
       <h2 class="hidden" id="portfolio">Portfolio</h2>
-      <article class="card-works">
-        <!-- Responsive images: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
-        <picture>
-          <source media="(max-width: 400px)" srcset="images/works/project_01.main_snapshot_295w.jpg">
-          <source media="(min-width: 400px)" srcset="images/works/project_01.main_snapshot_544w.jpg">
-          <img class="card-image" src="images/works/project_01.main_snapshot_544w.jpg" alt="Main snapshot of project 1">
-        </picture>
-        <div class="card-details">
-          <header>
-            <h3 class="project-title">Tonic</h3>
-            <div class="project-highlights">
-              <div class="project-client">Canopy</div>
-              <div class="project-role">Back End Dev</div>
-              <div class="project-year">2015</div>
-            </div>
-          </header>
-          <p class="project-summary">
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-          </p>
-          <ul class="project-tags">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <a href="#" class="btn">See Project</a>
-        </div>
-      </article>
-      <article class="card-works">
-        <picture>
-          <source media="(max-width: 400px)" srcset="images/works/project_02.main_snapshot_295w.jpg">
-          <source media="(min-width: 400px)" srcset="images/works/project_02.main_snapshot_544w.jpg">
-          <img class="card-image" src="images/works/project_02.main_snapshot_544w.jpg" alt="Main snapshot of project 1">
-        </picture>
-        <div class="card-details">
-          <header>
-            <h3 class="project-title">Multi-Post <br>Stories</h3>
-            <div class="project-highlights">
-              <div class="project-client">Canopy</div>
-              <div class="project-role">Back End Dev</div>
-              <div class="project-year">2015</div>
-            </div>
-          </header>
-          <p class="project-summary">
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-          </p>
-          <ul class="project-tags">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <a href="#" class="btn">See Project</a>
-        </div>
-      </article>
-      <article class="card-works">
-        <picture>
-          <source media="(max-width: 400px)" srcset="images/works/project_03.main_snapshot_295w.jpg">
-          <source media="(min-width: 400px)" srcset="images/works/project_03.main_snapshot_544w.jpg">
-          <img class="card-image" src="images/works/project_03.main_snapshot_544w.jpg" alt="Main snapshot of project 1">
-        </picture>
-        <div class="card-details">
-          <header>
-            <h3 class="project-title">Facebook 360</h3>
-            <div class="project-highlights">
-              <div class="project-client">Facebook</div>
-              <div class="project-role">Full Stack Dev</div>
-              <div class="project-year">2015</div>
-            </div>
-          </header>
-          <p class="project-summary">
-            Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
-          </p>
-          <ul class="project-tags">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <a href="#" class="btn">See Project</a>
-        </div>
-      </article>
-      <article class="card-works">
-        <picture>
-          <source media="(max-width: 400px)" srcset="images/works/project_04.main_snapshot_295w.jpg">
-          <source media="(min-width: 400px)" srcset="images/works/project_04.main_snapshot_544w.jpg">
-          <img class="card-image" src="images/works/project_04.main_snapshot_544w.jpg" alt="Main snapshot of project 1">
-        </picture>
-        <div class="card-details">
-          <header>
-            <h3 class="project-title">Uber Navigation</h3>
-            <div class="project-highlights">
-              <div class="project-client">Uber</div>
-              <div class="project-role">Lead Developer</div>
-              <div class="project-year">2018</div>
-            </div>
-          </header>
-          <p class="project-summary">
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-          </p>
-          <ul class="project-tags">
-            <li>html</li>
-            <li>Ruby on Rails</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <a href="#" class="btn">See Project</a>
-        </div>
-      </article>
     </section>
 
     <section class="about">
@@ -234,7 +129,8 @@
       <button class="btn" form="contact-form" type="submit">Get In Touch</button>
     </footer>
   </main>
-  <script src="mobile-menu.js"></script>
+  <script src="js/mobile-menu.js"></script>
+  <script src="js/project-modal.js"></script>
 </body>
 
 </html>

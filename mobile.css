@@ -1,7 +1,3 @@
-ul#menu > li {
-  display: none;
-}
-
 .hero-bg-shapes {
   background: white url(images/hero-bg-shapes-mobile.svg) 0 center no-repeat;
   background-size: 100vw 100%;
@@ -14,4 +10,51 @@ ul#menu > li {
 
 .about .headline {
   padding-bottom: 0;
+}
+
+/* Menu */
+#menu {
+  display: none;
+}
+
+#menu.active {
+  display: flex;
+  flex-direction: column;
+  padding: 106px 28px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #6070ffb4;
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  height: 100vh;
+}
+
+.toggle-icon {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-image: url("images/Hamburger-Menu.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.toggle-icon.active {
+  position: fixed;
+  background-image: url("images/hamburger-close.svg");
+}
+
+ul#menu li a {
+  color: #fff;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+}
+
+ul#menu > li a {
+  display: block;
 }
